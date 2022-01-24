@@ -19,10 +19,10 @@ const Post = () => {
 
   return (
     <>
-      <h1 className='fw-bold'>
+      <h1 className="fw-bold">
         {id}. {title}
       </h1>
-      <p className='fw-light'>{body}</p>
+      <p className="fw-light">{body}</p>
     </>
   );
 };

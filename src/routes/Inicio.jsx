@@ -12,7 +12,9 @@ function Inicio() {
         {user ? (
           <>
             Hola Manu, estas conectado 😎 y puedes ingresar {}
-            <Link className='text-danger' to="/protegida">aquí</Link>
+            <Link className="text-danger" to="/protegida">
+              aquí
+            </Link>
           </>
         ) : (
           'Desconectado 🤔'

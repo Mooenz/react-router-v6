@@ -6,8 +6,8 @@ const VerificarUsuario = ({ children }) => {
   const { user } = useContext(UserContext);
 
   if (!user) {
-    return <Navigate to="/" />
-  };
+    return <Navigate to="/" />;
+  }
 
   return children;
 };

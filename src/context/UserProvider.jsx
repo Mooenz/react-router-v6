@@ -2,9 +2,9 @@ import { createContext, useState } from 'react';
 
 export const UserContext = createContext();
 
-const {Provider} = UserContext;
+const { Provider } = UserContext;
 
-const UserProvider = ({children}) => {
+const UserProvider = ({ children }) => {
   const [user, setUser] = useState(false);
 
   const signIn = () => {
@@ -14,10 +14,8 @@ const UserProvider = ({children}) => {
   const signOut = () => {
     setUser(false);
   };
-  
-  return <Provider value={{user, signIn, signOut}}>
-    {children}
-  </Provider>;
+
+  return <Provider value={{ user, signIn, signOut }}>{children}</Provider>;
 };
 
 export default UserProvider;
